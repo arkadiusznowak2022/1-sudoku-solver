@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="btn-container" id="btn-container-exem">
+      <button class="btn btn-top-navi btn-exem" data-display="exem1">
+        Exemple: easy
+      </button>
+      <button class="btn btn-top-navi btn-exem" data-display="exem2">
+        Exemple: medium
+      </button>
+      <button class="btn btn-top-navi btn-exem" data-display="exem3">
+        Exemple: <strong>HARD</strong>
+      </button>
+    </nav>
+    <nav class="btn-container" id="btn-container-main">
+      <button class="btn btn-top-navi" id="btn-check">SOLVE</button>
+      <button class="btn btn-top-navi" id="btn-reset">RESET</button>
+    </nav>
+    <div class="sudoku-container">
+      <!-- div.nums-window>button.btn.btn-num[data-value="$"]{$}*9-->
+      <div class="nums-window">
+        <button class="btn btn-num" data-value="1">1</button
+        ><button class="btn btn-num" data-value="2">2</button
+        ><button class="btn btn-num" data-value="3">3</button
+        ><button class="btn btn-num" data-value="4">4</button
+        ><button class="btn btn-num" data-value="5">5</button
+        ><button class="btn btn-num" data-value="6">6</button
+        ><button class="btn btn-num" data-value="7">7</button
+        ><button class="btn btn-num" data-value="8">8</button
+        ><button class="btn btn-num" data-value="9">9</button>
+        <button class="btn btn-num" data-value="">0</button>
+      </div>
+    </div>
+
+    <div class="nums-overlay"></div>
+  </body>
+  <script type="module" src="controller.js"></script>
+</html>

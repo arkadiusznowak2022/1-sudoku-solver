@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-main-background: rgba(101, 243, 6, 0.5);
+}
+
+.sudoku-container {
+  position: relative;
+  background-color: var(--color-main-background);
+  padding: 20px;
+  margin: 2% auto;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 0;
+}
+
+.btn {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+  opacity: 0.8;
+  vertical-align: top;
+}
+.btn:active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.nums-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+
+  z-index: 5;
+}
+
+.nums-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 210px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: var(--color-main-background);
+  font-size: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.btn-num {
+  width: 60px;
+  height: 60px;
+  margin: 5px 5px;
+  font-weight: bold;
+}
+
+.btn-container {
+  height: 75px;
+  padding-top: 1%;
+  text-align: center;
+}
+
+.btn-top-navi {
+  width: 100px;
+  height: 65px;
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--color-main-background);
+  border: 3px solid black;
+  border-radius: 5px;
+
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-msg {
+  font-size: 50px;
+  font-family: monospace;
+  color: red;
+}
